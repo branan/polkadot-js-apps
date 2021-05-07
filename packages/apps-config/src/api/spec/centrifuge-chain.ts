@@ -6,6 +6,18 @@
 
 export default {
   // chain-specific
+  Address: "IndicesLookupSource",
+  LookupSource: "IndicesLookupSource",
+  RefCount: 'u32',
+  // This should be one of the default AccountInfo types, but for now just
+  // written manually until I can sort it out
+  AccountInfo: { 
+    nonce: 'Index',
+    consumers: 'RefCount',
+    providers: 'RefCount',
+    sufficients: 'RefCount',
+    data: 'AccountData'
+  },
   AnchorData: {
     id: 'H256',
     docRoot: 'H256',
