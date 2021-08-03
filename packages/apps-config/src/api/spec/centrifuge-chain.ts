@@ -67,7 +67,7 @@ export default {
       'NonTransfer',
       'Governance',
       'Staking',
-      'Vesting'
+      'NonProxy'
     ]
   }
 };
